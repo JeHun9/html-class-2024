@@ -6,6 +6,26 @@
     <title>My Blog Page</title>
 
         <link type="text/CSS" rel="stylesheet" href="/11주차/mycss.css">
+
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: lightcoral;
+                position: relative;
+                animation: 5s animation;
+                animation-iteration-count: 10;
+            }
+
+            @keyframes animation {
+                0% {background-color: lightcoral; left: 0px; top: 0px;}
+                25% {background-color: lightcoral; left: 25%; top: 25%;}
+                50% {background-color: beige; left: 50%; top: 0px;}
+                70% {background-color: mintcream; left: 70%; top: 50%;}
+                100% {background-color: lightskyblue; left: 0%; top: 0px;}
+            }
+        </style>
+
 </head>
 
 <body>
@@ -30,14 +50,7 @@
         </figure>
     </nav>
     <section id="main">
-        HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일 시트 언어.
-        <br>
-        CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다.
-        <br>
-        다만 예외로 마진, 패딩, 보더 등의 박스모델 관련 속성은 상속되지 않는다.
-        <br>
-        물론 inherit 값을 줘서 강제로 상속시킬 순 있다.
-
+        <div></div>
     </section>
     <footer>Copyright (c) 2024 Jo</footer>
 </body>
