@@ -1,0 +1,41 @@
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+header{
+    background-color: gray;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+}
+h1{
+    margin: 0px;
+}
+section#main{
+    float: right;
+    width: 70%;
+    height: 200px;
+    background-color: lightgray;
+}
+nav{
+    float: left;
+    width: 30%;
+    height: 200px;
+    background-color: darkgray;
+}
+footer{
+    background-color: coral;
+    color: #efe5d0;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 90%;
+    clear: both;
+}
+figcaption{
+    color: #efe5d0;
+    text-align: left;
+    padding-top: 5px;
+}
