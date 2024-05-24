@@ -39,3 +39,12 @@ figcaption{
     text-align: left;
     padding-top: 5px;
 }
+
+@media screen and (max-width:480px) {
+    section#main{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+}
