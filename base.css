@@ -1,0 +1,84 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+	width: 100%;
+	height: 100%;
+	-webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #333; 
+}
+
+.card {    
+	width: 100vw;
+    height: 80%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+	transform: scale(1);
+	opacity: 0.4;
+}
+
+.card-inside-border {
+    width: 90%;
+    height: 90%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+}
+
+.card-btns {
+	opacity: 1;
+	display: flex;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translatex(-50%);
+	z-index: 4;
+	gap: 20px;
+	overflow: hidden;
+	transition: height 0.5s, opacity 0.3s ease-out;
+	min-width: 200px;
+	height: 40px;
+}
+
+.card-btns a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	color: #fff;
+	font-size: clamp(16px, 1.2vw, 1.2vw);
+}

@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+	width: 100%;
+	height: 100%;
+	-webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #333; 
+}
+
+.card {    
+	width: 100vw;
+    height: 80%;
+    overflow: hidden;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+	transform: scale(1.2);
+	transition: transform 1s ease, opacity 1s ease;
+}
+
+.card:hover .card-img {
+	transform: scale(1);
+	opacity: 0.4;
+}
+
+.card:hover .card-inside-border {
+	opacity: 1;
+}
+
+
+.card-inside-border {
+    width: 90%;
+    height: 90%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.text-wr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+	z-index: 5;
+}
+
+.text-wr .m-text {
+	font-weight: 700;
+	font-size: clamp(16px, 5vw, 5vw);
+	text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.text-wr .s-text {
+	height: 0;
+	overflow: hidden;
+	font-size: clamp(12px, 3vw, 3vw);
+	transition: height 0.5s, opacity 0.3s ease-out;
+	opacity: 0;
+}
+
+.card:hover .text-wr .s-text {
+	height: 4vw;
+	opacity: 1;
+	transition: height 0.5s ease, opacity 0.3s ease-in-out;
+}
+
+.card-btns {
+	opacity: 1;
+	display: flex;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translatex(-50%);
+	z-index: 10;
+	gap: 20px;
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s, opacity 0.3s ease-out;
+	opacity: 0;
+	min-width: 200px;
+}
+
+.card-btns a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	color: #fff;
+	font-size: clamp(16px, 1.2vw, 1.2vw);
+}
+
+.card:hover .card-btns {
+	height: 40px;
+	opacity: 1;
+}
+
+
+.box-wr {
+    width: 90%;
+    height: 90%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

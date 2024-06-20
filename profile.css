@@ -1,0 +1,54 @@
+
+.contnet-bx {
+	width: 90%;
+    top: 0;
+    height: 70%;
+	left: 50%;
+	transform: translatex(-50%);
+	position: absolute;
+	display: flex;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	z-index: 8;
+}
+
+.content-left {
+	flex: 1;
+	position: relative;
+	height: 100%;
+}
+
+.profile {
+	width: 15vw;
+    height: 15vw;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.content-right {
+	flex: 2;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    gap: 5%;
+	font-weight: 700;
+	color: #fff;
+	font-size: clamp(12px, 3vw, 3vw);
+    justify-content: center;
+}
+
+.m-txt {
+	display: block;
+	min-width: 80px;	
+	width: 20%;
+}
+
+li {
+	display: flex;
+}
